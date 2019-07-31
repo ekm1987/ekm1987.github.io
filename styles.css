@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;    
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-height: 100%;
+    background-color: rgb(252, 218, 244);
+    font-family: 'Questrial', sans-serif;
+}
+  
+h1{
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    padding: 20px 10px;
+}
+
+h2{
+    display: flex;
+    flex-flow: column;
+    padding-left: 350px;
+}
+
+h3{
+    display: flex;
+    flex-flow: column;
+    padding-left: 300px;
+}
+
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */    
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid rgb(219, 88, 202);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+    overflow: hidden;    
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    border-radius: 25px;
+}
+
+li{
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    background-color: rgb(219, 88, 202);
+}
+  
+.active {
+    background-color: blueviolet;
+}
+
+.bg-image{
+    margin: 0;
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1{ background-image: url("Labba.png"); }
+.img2{ background-image: url("Narala.png"); }
+.img3{ background-image: url("Pax.png"); }
+.img4{ background-image: url("Rosie.png"); }
+
+.bg-text{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position: fixed; 
+    top: 400px;
+    right: 50%;
+    left: 50%;
+    width: 700px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.bg-text2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    border: 10px solid #f1f1f1;
+    padding: 50px;
+    margin: 10px;
+    text-align: center;
+    }
+
+h1:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.LI-profile-badge{
+    display: flex;
+    position: relative;
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input,textarea{
+    width:50%;
+    line-height:1.5;
+    margin:10px;
+    font-family:'Questrial', sans-serif;
+    text-align:center;
+    font-size:18px;
+}
+button{
+    width: 50%;
+    background-color:rgb(219, 88, 202);
+    color:black;
+    border-style: solid;
+    border-color:black;
+    padding:20px;
+    margin:10px;
+    font-family:'Questrial', sans-serif;
+    font-weight:600;
+    border-radius:10px;
+    font-size:20px;
+}
+.check{
+    width: 50%;
+    text-align: center;
+}
+
+.updates{
+    text-align: center;
+    width: 50%;
+}
+
+.card-deck{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:20px 10px 100px ;
+}
+   
+.card-container{
+    padding-top:50px;
+}
+   
+.card-container .card {
+    margin-bottom:50px;
+}
+   
+.nav-link{
+     color:purple;
+}
+   
+.nav-item{
+    color: blueviolet;
+}
+
+
