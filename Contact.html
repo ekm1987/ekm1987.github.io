@@ -5,38 +5,79 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Emma Mondy</title>
-        <link rel="stylesheet" href="styles.css">
         <style>@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');</style>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
 
     </head>
 
 
     <body>
 
-        <h1 class="sticky">Emma Mondy</h1>
+        <h1>Emma Mondy</h1>
 
-        <ul>
-            <li><a href="C:\Users\ekm19\Documents\SheCodes!\Contact.html">Contact</a></li>
-            <li><a href="C:\Users\ekm19\Documents\SheCodes!\Portfolio.html">Portfolio</a></li>
-            <li><a href="C:\Users\ekm19\Documents\SheCodes!\AboutMe.html">About Me</a></li>          
-            <li><a href="C:\Users\ekm19\Documents\SheCodes!\index.html">Home</a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg navbar-light navbar-left">
+    <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
 
-        <div>
-    <h3>Contact Me Now!</h3>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="AboutMe.html">About Me</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link text-white" href="Portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link text-white" href="Contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container contactme">
+<div class="col-12">
     <form method="POST" action="https://formspree.io/ekm1987@hotmail.com">
-        <input type="text" name="name" placeholder="Name" autocomplete="on" autofocus required>
+        
+        <div class="form-group">
+            <label for="nameform">Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Name" autocomplete="on" autofocus required>
+        </div>
        <br>
-        <input type="email" name="email" placeholder="Email" autocomplete="on" required>
+     
+       <div class="form-group">
+            <label for="emailform">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="Email" autocomplete="on" required>
+        </div>
        <br><br>
-        <textarea name="message" placeholder="Message"></textarea>
+
+        <div class="form-group">
+            <label for="messageform">Message</label>
+            <textarea name="message" class="form-control" placeholder="Message"></textarea>
+        </div>
         <br>
-        <input type="checkbox" name="updates" value="yes" class="check">
-        <div class="updates"> Send me regular updates</div>
-        <button type="submit">Submit!</button>
+        
+        <div class="form-check">
+            <div class="col-12 text-center">
+                <label for="updates"> Send me regular updates</label>
+                <input type="checkbox" name="updates" value="yes" class="form-check-input">
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="form-row text-center">
+            <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit!</button>
+        </div>
     </form>
 </div>
 
