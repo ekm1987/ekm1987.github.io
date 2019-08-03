@@ -120,8 +120,8 @@ li a:hover:not(.active) {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
     color: white;
-    font-weight: bold;
-    font-size: 40px;
+    font-size: calc(8px + (20 - 8) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
     border: 10px solid blueviolet;
     box-shadow: 2px 2px 4px #000000;
     padding: 50px;
@@ -238,4 +238,9 @@ textarea[name= message]{
 .navbar{
     position: relative;
     z-index: 10;
+}
+
+.navbar-toggler{
+    position: relative;
+    z-index:4;
 }
