@@ -343,6 +343,7 @@ label{
 
 /* Style all font awesome icons */
 .fa {
+    padding:10px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
