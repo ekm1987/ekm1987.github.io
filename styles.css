@@ -204,6 +204,7 @@ input[type= text]{
     box-sizing: border-box;
     border: 2px solid #c5d5cb;
     border-radius: 4px;
+    font-weight: 600;
 }
 
 input[type= email]{
@@ -214,6 +215,7 @@ input[type= email]{
     box-sizing: border-box;
     border: 2px solid #c5d5cb;
     border-radius: 4px;
+    font-weight: 600;
 }
 
 textarea[name= message]{
@@ -224,10 +226,12 @@ textarea[name= message]{
     box-sizing: border-box;
     border: 2px solid #c5d5cb;
     border-radius: 4px;
+    font-weight: 600;
 }
 
 label{
     margin: 0;
+    font-weight: 600;
 }
 
 .navbar-light .navbar-toggler{
